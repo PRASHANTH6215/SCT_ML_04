@@ -1,0 +1,30 @@
+paths:
+  raw_data: data/raw/hagrid
+  processed_data: data/processed
+  model_output: models/
+
+gestures:
+  - call
+  - dislike
+  - fist
+  - four
+  - like
+  - mute
+  - ok
+  - one
+  - palm
+  - peace
+  - rock
+  - stop
+  - three
+  - two_up
+
+landmark_extraction:
+  min_detection_confidence: 0.3
+  min_tracking_confidence: 0.3
+  max_num_hands: 1
+
+training:
+  test_split: 0.2
+  val_split: 0.1
+  random_seed: 42
